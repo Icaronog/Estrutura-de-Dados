@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(int argc, char** argv)
+
+{
+   int tempo, h, h_seg, min, seg;
+   h_seg=3600;
+   printf("Entre com o número de segundos: ");
+   scanf("%d", &tempo);
+   h = (tempo/h_seg);
+   min = (tempo -(h_seg*h))/60;
+   seg = (tempo -(h_seg*h)-(min*60));
+   printf("%dh : %dm :%ds \n",horas,minutos,segundos);
+   
+   return 0;
+}
