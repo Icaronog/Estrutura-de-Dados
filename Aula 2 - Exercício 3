@@ -1,0 +1,26 @@
+#include "stdio.h"
+#include "stdlib.h"
+
+int produto(int primCol, int segCol);
+
+void main() {
+  int a, b;
+  randomize();
+  for (int n=1; n<=10; n++) {
+    a = random(10);
+    b = random(10);
+    printf("%d * %d = %2d.\n", a, b, produto(a, b));
+  }
+}
+
+int produto(int primCol, int segCol) {
+  int sm = 0;
+  while (primCol != 0) {
+    if ((primCol % 2) == 1)
+       sm = sm + segCol;
+    primCol = primCol / 2;
+    segCol = segCol * 2;
+  }
+
+  return(sm);    
+}
