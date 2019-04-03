@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+void dobroNum(int num){
+    printf("\nDobro de %d = %d", num, 2*num);
+}
+
+void quadradoNum(int num){
+    printf("\nQuadrado de %d = %d", num, num*num);
+}
+
+void divNum(int num1, int num2){
+    float result = (float)num1 / (float) num2;
+    printf("\nDivisao: %d / %d = %f", num1, num2, result);
+}
+void restoDivisao(int num1, int num2){
+    float result =  num1 % num2;
+
+    printf("\nResto da divisao: %f", result);
+}
+
+void verificarSoma(int num1, int num2){
+    if(num1 + num2 > 0)
+        printf("\nResultado Positivo");
+    else
+        printf("\nResultado Negativo");
+}
+
+int main(){
+    int num1, num2;
+
+    printf("Digite o primeiro numero: ");
+    scanf("%d", &num1);
+    printf("Digite o primeiro numero: ");
+    scanf("%d", &num2);
+
+    dobroNum(num1); dobroNum(num2);
+    quadradoNum(num1); quadradoNum(num2);
+    divNum(num1,num2);
+    restoDivisao(num1,num2);
+    verificarSoma(num1,num2);
+
+
+}
