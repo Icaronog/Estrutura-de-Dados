@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int multNumeros(int num1, int num2){
+    int result = num1 * num2;
+    printf("%d", result);
+}
+
+int somaNumeros(int num1, int num2){
+    int result = num1 + num2;
+    printf("%d", result);
+}
+
+int subNumeros(int num1, int num2){
+    int result = num1 - num2;
+    printf("%d", result);
+}
+
+float divNum(int num1, int num2){
+    float result = num1 / num2;
+    printf("%f", result);
+}
+
+int main (){
+    int num1, num2;
+    int op = 0;
+
+        printf("digite o primeiro numero: ");
+        scanf("%d", &num1);
+        printf("digite o segundo numero: ");
+        scanf("%d", &num2);
+
+        printf("1 - Soma\n2 - Subtracao\n3 - Multiplicacao\n4 - Divisao\n5 - Sair\n");
+        printf("Escolha a operacao: ");
+        scanf("%d", &op);
+    switch(op){
+        case 1:
+            somaNumeros(num1, num2);
+            break;
+        case 2:
+            subNumeros(num1, num2);
+            break;
+        case 3:
+            multNumeros(num1, num2);
+            break;
+        case 4:
+            divNum(num1, num2);
+            break;
+    }
+}
