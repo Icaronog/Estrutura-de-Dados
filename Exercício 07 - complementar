@@ -1,0 +1,31 @@
+#include <stdio.h>
+#define TAM 50
+
+
+void verificarDados(int idade){
+
+    if(idade > 18 && idade < 70){
+        printf("\nVoto Obrigatorio");
+    }else{
+        printf("\nVoto Facultativo");
+    }
+
+}
+
+int main(){
+
+    int idade, numTitulo;
+    char nome[TAM];
+
+    printf("Informe seu nome: ");
+    scanf("%s", &nome);
+    printf("Informe seu idade: ");
+    scanf("%d", &idade);
+    printf("Informe o numero do titulo: ");
+    scanf("%d", &numTitulo);
+
+    verificarDados(idade);
+
+
+    return 0;
+}
