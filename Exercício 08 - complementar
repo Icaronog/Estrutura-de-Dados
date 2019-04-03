@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+
+void veritifcarNumeros(int num1, int num2){
+
+    if(num1>0)
+        printf("\nQuadrado de %d = %d ", num1, num1*num1);
+
+    if(num2 > 10 && num2<100)
+        printf("\nNumero esta entre 10 e 100 - intervalo permitido");
+
+    if(num2<num1)
+        printf("\n%d - %d = %d",num2, num1, num2-num1);
+    else
+        printf("\n%d", num1+1);
+
+}
+
+
+
+int main(){
+
+    int num1, num2;
+
+
+    printf("Digite o primeiro numero: ");
+    scanf("%d", &num1);
+    printf("Digite o segundo numero: ");
+    scanf("%d", &num2);
+
+    veritifcarNumeros(num1, num2);
+
+}
