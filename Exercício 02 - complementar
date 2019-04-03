@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+
+void dobroNum(int num1, int num2){
+
+  printf("\nDobro do primeiro numero: %d", 2*num1);
+  printf("\nDobro do segundo numero: %d", 2*num2);
+
+}
+
+int multiplicarNum(int num1, int num2){
+    int multi = num1 * num2;
+    printf("\n\nResultado da multiplicacao: %d", multi);
+    return multi;
+}
+
+void verificarNum(int num){
+
+    if(num < 0)
+        printf("\nNumero Negativo");
+    else
+        printf("\nNumero Positivo");
+}
+
+int main (){
+
+    int num1, num2, mult;
+
+    printf("Digite o primeiro numero: ");
+    scanf("%d", &num1);
+    printf("Digite o segundo numero: ");
+    scanf("%d", &num2);
+
+    dobroNum(num1, num2);
+    mult = multiplicarNum(num1, num2);
+    verificarNum(mult);
+
+    return 0;
+}
